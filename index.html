@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Expense Manager</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="icon" sizes="192x192" href="images/app-icon-192.png" />
+  <meta name="application-name" content="Expense Manager">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="images/app-icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Expense Manager">
+
+  <link rel="stylesheet" href="styles/main.css" async>
+  <script src="app/getjson.js"></script>
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
+  <link rel="import" href="bower_components/vaadin-icons/vaadin-icons.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="bower_components/paper-input/paper-textarea.html">
+  <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="bower_components/paper-toast/paper-toast.html">
+  <link rel="import" href="bower_components/vaadin-grid/vaadin-grid.html">
+  <link rel="import" href="bower_components/vaadin-combo-box/vaadin-combo-box.html">
+  <link rel="import" href="bower_components/vaadin-date-picker/vaadin-date-picker.html">
+  <link rel="import" href="bower_components/vaadin-upload/vaadin-upload.html">
+  <link rel="import" href="app/chart-element.html">
+  <link rel="import" href="styles/app-theme.html">
+
+  <script src="bower_components/accounting/accounting.min.js" charset="utf-8"></script>
+  <script src="bower_components/moment/min/moment.min.js" charset="utf-8"></script>
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    document.addEventListener('WebComponentsReady', function() {
+      System.import('app').catch(function(err) {
+        console.error(err);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <expense-app>Loading...</expense-app>
+</body>
+
+</html>

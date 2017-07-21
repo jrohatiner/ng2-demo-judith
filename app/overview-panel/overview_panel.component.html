@@ -1,0 +1,11 @@
+<div class="total">
+  <div>Total</div>
+  <div class="sum">{{totalExpensesInDollar}}</div>
+</div>
+<div id="container">
+  <h2 class="chart-title">
+    Last 12 months
+  </h2>
+
+  <chart-element [data]="monthlyExpenses" class="chart"></chart-element>
+</div>
