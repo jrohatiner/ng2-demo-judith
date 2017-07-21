@@ -1,6 +1,9 @@
 {
   "name": "expense-manager",
   "version": "1.0.0",
+  "engines": {
+  "node": "7.4.0"
+   }
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
