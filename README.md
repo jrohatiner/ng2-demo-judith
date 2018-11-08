@@ -1,7 +1,7 @@
 # Web App using Angular2, Polymer and Vaadin Elements
 
 
-This is an example project for how you can build a WebApp with [Angular2](https://angular.io/), [Polymer](https://www.polymer-project.org/1.0/) and [Vaadin Elements](https://vaadin.com/elements).
+This is an example project for how you can build a WebApp with [Angular2](https://angular.io/), [Polymer](https://www.polymer-project.org/1.0/) and Vaadin Elements.
 
 <img src='https://github.com/vaadin/expense-manager-ng2-demo/raw/master/images/expense-ng2-screenshot.gif' width='340px'>
 
